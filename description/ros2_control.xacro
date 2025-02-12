@@ -1,9 +1,11 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+    <!-- Nhan lenh van toc tu ros2 va thuc thi trong Gazebo -->
     <ros2_control name="GazeboSystem" type="system">
         <hardware>
-            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+            <!-- Replace hardware thực tế khi điều khiển động cơ -->
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>  
         </hardware>
         <joint name="left_wheel_joint">
             <command_interface name="velocity">
